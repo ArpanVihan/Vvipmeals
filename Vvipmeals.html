@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fast and Tasty Online Food Delivery Services| Vvipmeals.com</title>
+        <link rel="stylesheet" media="screen and (max-width: 1020px)" href="phone.css">
+    </head>
+
+    <style>
+        #logo img{
+            width: 105px;
+            height: 105px;
+        }
+        #logo{
+            margin: 13px 34px;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: relative;
+              
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            top: 0px;
+            left: 0px;
+
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before{
+            content: "";
+            background: url('food 1.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 740px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.85;
+            top: 0px;
+            left: 0px;
+        }
+        .h-primary{
+            padding: 12px;
+            font-size: 3.8rem;
+        }
+        .h-secondary{
+            padding: 12px;
+            font-size: 2.8rem;
+        }
+        #home h1{
+            color: #114d55;
+            text-align: center;
+        }
+        #home p{
+            color: #114d55;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid rgb(185, 164, 74);
+            background-color: rgb(158, 117, 64);
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .center{
+            text-align: center;
+            
+        }
+        #services{
+            margin: 34px;
+            display: flex;
+        }
+        #services .box{
+            border: 2px solid red;
+            padding: 34px;
+            margin: 3px 6px;
+            background-color: aquamarine;
+            border-radius: 28px;
+        }
+        #services .box img{
+            height: 174px;
+            width: 176px;
+            display: block;
+            margin: auto;
+        }
+        #services .box p{
+            font-size: 2.3rem;
+        }
+        #client-section{
+            height: 344px;
+            position: relative;
+           
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 47%;
+            z-index: -1;
+            opacity: 0.4;
+            background: url('veg.jpg');
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #clients img{
+            height: 124px;
+        }
+        .client-item{
+            padding: 34px;
+        }
+        #contact{
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background: url('buisness.jpg') no-repeat center center/cover;
+
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+        }
+
+    </style>
+
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="Vvipmeals.com">
+            </div>
+
+            <ul>
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">About Us</a></li>
+                <li class="item"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <h1 class="h-primary">Welcome to Vvipmeals</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda blanditiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <button class="btn">Order Now</button>
+
+        </section>
+
+        <secton class="services-container">
+            <h1 class="h-primary center">Our Services</h1>
+            <div id="services">
+                <div class="box">
+                     <img src="img/food 3 (1).jpg" alt="">
+                     <h2 class="h-secondary center">Food Ordering</h2>
+                     <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta praesentium, ullam corporis eveniet, numquam in distinctio amet eligendi voluptatibus obcaecati fuga consequatur maiores quas suscipit laudantium, veritatis cum soluta provident aliquid iure sint sapiente?</p>
+                </div>
+                <div class="box">
+                     <img src="img/food 3 (2).jpg" alt="">
+                     <h2 class="h-secondary center">Food Catering</h2>
+                     <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta praesentium, ullam corporis eveniet, numquam in distinctio amet eligendi voluptatibus obcaecati fuga consequatur maiores quas suscipit laudantium, veritatis cum soluta provident aliquid iure sint sapiente?</p>
+                </div>
+                <div class="box">
+                     <img src="img/food delivery.webp" alt="">
+                     <h2 class="h-secondary center">Food Delivery</h2>
+                     <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta praesentium, ullam corporis eveniet, numquam in distinctio amet eligendi voluptatibus obcaecati fuga consequatur maiores quas suscipit laudantium, veritatis cum soluta provident aliquid iure sint sapiente?</p>
+                </div>
+            </div>
+        </secton>
+        <section class="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="img/Apple-logo.png" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="img/asus.jpg" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="img/microsoft.png" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="img/zoom.jpg" alt="Our Client">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Ener your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" name="name" id="email" placeholder="Ener your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="name" id="phone" placeholder="Ener your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <input type="text" name="name" id="message" placeholder="Ener your message">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="center">
+                Copyright &copy; www.Vvipmeals.com. All rights reserved!
+            </div>
+        </footer>
+    </body>
+</html>
